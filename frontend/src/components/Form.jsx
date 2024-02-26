@@ -57,7 +57,7 @@ function Form(props) {
   };
 
   return (
-    <div style={{ display: "flex", width: "150%" }}>
+    <div className="div" style={{ display: "flex", width: "180%" }}>
       <form className="form">
         <div className="names">
           <input
@@ -65,6 +65,7 @@ function Form(props) {
             onChange={handleChange}
             value={inputs.fName}
             type="text"
+            required
             placeholder="FIRST NAME*"
           />
           <input
@@ -73,6 +74,7 @@ function Form(props) {
             value={inputs.lName}
             type="text"
             placeholder="LAST NAME*"
+            required
             style={{ marginLeft: "1rem" }}
           />
         </div>
@@ -82,6 +84,7 @@ function Form(props) {
             onChange={handleChange}
             value={inputs.email}
             type="text"
+            required
             placeholder="EMAIL*"
           />
           <input
@@ -90,6 +93,7 @@ function Form(props) {
             onChange={handleChange}
             value={inputs.phone}
             placeholder="PHONE*"
+            required
             style={{ marginLeft: "1rem" }}
           />
         </div>
@@ -99,6 +103,7 @@ function Form(props) {
             onChange={handleChange}
             value={inputs.subject}
             type="text"
+            required
             placeholder="SUBJECT*"
           />
           <textarea
@@ -106,6 +111,7 @@ function Form(props) {
             onChange={handleChange}
             value={inputs.message}
             placeholder="MESSAGE*"
+            required
             cols="30"
             rows="5"
           ></textarea>

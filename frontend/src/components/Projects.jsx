@@ -12,17 +12,18 @@ function Projects() {
           <div className="p-left">
             <h2 className="h3">AMAZON CLONE</h2>
             <p className="p-desc">
-              A clone of amazon’s website to gain hands on experience of
-              frontend development.
+              A clone of amazon’s website to gain hands on experience of React,
+              Material UI and to know prerequisite for frontend development.
             </p>
             <ul className="ul">
               <li className="li">HTMLS</li>
               <li className="li">CSS</li>
+              <li className="li">BOOTSTRAP</li>
               <li className="li">JavaScript</li>
               <li className="li">React</li>
               <li className="li">Material UI</li>
             </ul>
-            <button className="btn-p">VIEW PROJECT</button>
+            {/* <button className="btn-p">VIEW PROJECT</button> */}
           </div>
           <div className="p-right">
             <img className="img" src={require("./amaz.png")} alt="" />
@@ -45,7 +46,7 @@ function Projects() {
               <li className="li">Express.js</li>
               <li className="li">PostgreSQL</li>
             </ul>
-            <button className="btn-p">VIEW PROJECT</button>
+            {/* <button className="btn-p">VIEW PROJECT</button> */}
           </div>
           <div className="p-right">
             <img className="img" src={require("./note-app.png")} alt="" />
@@ -54,10 +55,11 @@ function Projects() {
         {/* 3rd project */}
         <div className="pro-cont" style={{ marginBottom: "4rem" }}>
           <div className="p-left">
-            <h2 className="h3">AMAZON CLONE</h2>
+            <h2 className="h3">NEWZ TODAY</h2>
             <p className="p-desc">
-              A clone of amazon’s website to gain hands on experience of
-              frontend development.
+              This app is a news website developed using News Api. A place where
+              you get current affairs from all the spheres like Entertainment,
+              Business, Science and Technology etc.
             </p>
             <ul className="ul">
               <li className="li">HTMLS</li>
@@ -66,10 +68,10 @@ function Projects() {
               <li className="li">React</li>
               <li className="li">Material UI</li>
             </ul>
-            <button className="btn-p">VIEW PROJECT</button>
+            {/* <button className="btn-p">VIEW PROJECT</button> */}
           </div>
           <div className="p-right">
-            <img className="img" src={require("./amaz.png")} alt="" />
+            <img className="img" src={require("./newz.png")} alt="" />
           </div>
         </div>
       </div>

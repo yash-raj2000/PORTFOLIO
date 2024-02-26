@@ -7,12 +7,12 @@ function Experience() {
         <div className="title">
           <h2>EXPERIENCE</h2>
         </div>
-        <h4 style={{ color: "blue" }}>
+        <h4 style={{ color: "blue", marginTop: "2rem" }}>
           INFOSYS [Full-Time(10-2022 to 07-2023)]
-        </h4>{" "}
-        <hr />
+        </h4>
+
         <div className="content">
-          <p style={{ marginTop: "-2rem" }}>
+          <p style={{ marginTop: "3rem" }}>
             I have worked in Infosys as a DSE from Oct-2022 to July-2023.
             Infosys Limited, is an Indian multinational corporation that
             provides business consulting, information technology and outsourcing

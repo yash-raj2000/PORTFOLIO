@@ -16,7 +16,7 @@ function Home() {
         <p>Frontend Web Developer</p>
 
         <button className="home-btn" onClick={openResume}>
-          <span style={{ fontSize: "1.5rem" }}>RESUME</span>
+          <span style={{ fontSize: "1rem" }}>RESUME</span>
         </button>
       </div>
       <div className="right" style={{ float: "right" }}>

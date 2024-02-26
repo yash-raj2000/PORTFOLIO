@@ -1,18 +1,22 @@
 body {
   margin: 0;
   padding: 0;
+  bottom: 0;
+  top: 0;
+  height: 100vh;
+  overflow-x: hidden;
   background-color: #00297a;
   background-image: url("https://www.transparenttextures.com/patterns/random-grey-variations.png");
 }
 
 header {
   width: 100%;
-  height: 7vh;
+  height: 8vh;
   background: whitesmoke;
   overflow: hidden;
   position: sticky;
   top: 0;
-  transition: all 0.3s ease; /* other css rules here */
+  transition: all 0.3s ease;
 }
 
 .headerElementsResp {
@@ -86,7 +90,7 @@ a {
 
 .name {
   color: purple;
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 .home-btn {
@@ -211,6 +215,10 @@ a {
   overflow: hidden;
 }
 
+.p-title {
+  margin-top: 4rem;
+}
+
 .p-title > h2 {
   font-size: 2.5rem;
   margin-left: 8rem;
@@ -284,12 +292,13 @@ a {
 }
 .contact-cont {
   display: flex;
-  height: 48rem;
+  height: 51rem;
   margin: 2rem 0 2rem 2rem;
   overflow: hidden;
 }
 .cont-left {
   float: left;
+  margin-top: 6rem;
   width: 60%;
 }
 .cont-right {
@@ -322,13 +331,17 @@ a {
   border-radius: 6px;
 }
 
+.contactResp {
+  display: none;
+}
+
 .cont-btn > span {
   font-size: 0.85rem;
   line-height: 2.8rem;
 }
 
 .social {
-  margin: 5rem;
+  margin: 8rem 5rem 5rem 5rem;
 }
 
 .getInTouch {
@@ -366,17 +379,17 @@ footer {
 }
 
 .para > p {
-  padding: 3px;
+  padding: 1px;
   margin-bottom: 16px;
 }
 
 .form {
-  width: 120%;
-  height: 25rem;
+  width: 70%;
+  height: 28rem;
   background-color: black;
   display: flex;
   flex-direction: column;
-  margin: 2rem 3rem 0 11rem;
+  margin: 2rem 3rem 0 12rem;
 }
 
 .names {
@@ -386,7 +399,7 @@ footer {
 }
 
 .names > input {
-  width: 48%;
+  width: 50%;
   border: 2px solid black;
   height: 1.5rem;
 }
@@ -398,7 +411,7 @@ footer {
 }
 
 .mail > input {
-  width: 48%;
+  width: 50%;
   border: 2px solid black;
   height: 1.5rem;
 }
@@ -410,14 +423,14 @@ footer {
 }
 
 .info > input {
-  width: 98.3%;
+  width: 100.3%;
   border: 2px solid black;
   margin: 0rem 0rem 0.7rem 0rem;
   height: 1.5rem;
 }
 .info > textarea {
   margin-bottom: 0.7rem;
-  width: 98.3%;
+  width: 100.3%;
   border: 2px solid black;
 }
 
@@ -439,4 +452,409 @@ footer {
 .close:hover {
   cursor: pointer;
   background: red;
+}
+
+@media screen and (max-width: 426px) {
+  body {
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100%;
+    overflow-x: hidden;
+  }
+  header {
+    display: none;
+  }
+  .resp {
+    overflow-x: hidden;
+    display: block;
+  }
+  .image {
+    width: 70%;
+    height: 3rem;
+  }
+  .section {
+    display: flex;
+    flex-direction: column;
+    width: 130%;
+    height: 45rem;
+    align-items: center;
+    margin: 6rem 1rem 2rem 1rem;
+  }
+  .left {
+    width: 100%;
+    margin-left: 9rem;
+  }
+
+  .s-title > h2 {
+    margin-bottom: 2rem;
+  }
+
+  .name {
+    font-size: 3.5rem;
+  }
+  .home-btn {
+    height: 3rem;
+    width: 170px;
+  }
+  .home-btn > span {
+    font-size: 1rem;
+  }
+  .right {
+    margin-right: 4rem;
+  }
+  .right > img {
+    width: 90%;
+  }
+
+  .about {
+    height: 65rem;
+    width: 134%;
+  }
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 1rem 3rem 1rem;
+  }
+  .exp-cont {
+    margin-top: -3rem;
+    height: 50rem;
+    width: 134%;
+  }
+  .section-exp {
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 1rem 3rem 1rem;
+  }
+  .skills {
+    height: 52rem;
+    background: #fff;
+    margin-top: 5rem;
+    margin-top: -1rem;
+    width: 134%;
+  }
+  .skills-cont {
+    height: 40rem;
+    margin: 0rem 0rem 3rem 0rem;
+  }
+  .s-title {
+    margin-left: -7rem;
+  }
+  .title > h2 {
+    margin-bottom: 3rem;
+  }
+  .logos-cont {
+    display: none;
+  }
+  .logos-contResp {
+    display: block;
+  }
+  .logos {
+    width: 90%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .project {
+    width: 133%;
+  }
+  .Projects-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 1rem 0rem 1rem;
+  }
+  .p-title {
+    margin: 3rem 0 0 -5rem;
+  }
+
+  .p-title > h2 {
+    margin: 2rem 0 0 7rem;
+  }
+
+  .p-left {
+    float: left;
+    height: 30rem;
+    margin: 2rem 0 2rem -3rem;
+    width: 100%;
+  }
+  .pro-cont {
+    display: flex;
+    flex-direction: column;
+    height: 45rem;
+  }
+  .p-right {
+    float: right;
+    margin: 2rem 2rem 2rem 2rem;
+    height: 30rem;
+    width: 90%;
+  }
+  .p-right > img {
+    height: 100%;
+  }
+  .project {
+    height: 145rem;
+  }
+
+  .contact {
+    display: none;
+  }
+
+  .contactResp {
+    display: block;
+    background: #fff;
+    width: 134%;
+    margin-top: 14rem;
+  }
+
+  .contact-cont {
+    height: 60rem;
+    margin: 0;
+  }
+  .cont-btn {
+    margin-left: 3rem;
+  }
+  .cont-right {
+    height: 25rem;
+  }
+
+  .cont-left {
+    float: left;
+    margin-top: 0rem;
+    width: 60%;
+  }
+
+  .h4 {
+    font-size: 1.7rem;
+    margin: 2rem 0 3rem 3rem;
+  }
+  .social {
+    height: 20rem;
+    margin: 3rem 0 0 1rem;
+  }
+  .getInTouch {
+    margin-bottom: 1rem;
+  }
+
+  .form {
+    margin: 2rem 5rem 0 5rem;
+    height: 21rem;
+  }
+  footer {
+    width: 134%;
+    display: flex;
+    align-items: center;
+  }
+  .para {
+    margin-left: 5px;
+  }
+  .para > p {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 427px) {
+  header {
+    display: block;
+  }
+  .resp {
+    display: none;
+  }
+  .headerElements {
+    float: right;
+    display: flex;
+    margin-right: 5px;
+  }
+  .headerElements > li {
+    list-style: none;
+    margin: 1px 12px 1px 1px;
+  }
+  a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: black;
+  }
+  .logo > img {
+    margin: 0px;
+    height: 31px;
+  }
+
+  .section {
+    margin: 0px;
+    height: 25rem;
+  }
+  .left {
+    margin-left: 3rem;
+  }
+  .left > p {
+    font-size: 1.4rem;
+  }
+  .name {
+    font-size: 2rem;
+  }
+  .home-btn {
+    max-width: 72%;
+    height: 2.5rem;
+    text-align: center;
+  }
+  .home-btn > span {
+    line-height: 0;
+  }
+  .right {
+    margin-right: 3rem;
+  }
+  .about {
+    height: 40rem;
+  }
+  .about-container {
+    margin: 2rem 2rem 3rem 2rem;
+  }
+  .section-exp {
+    margin: 0rem 2rem 3rem 2rem;
+  }
+  .skills {
+    margin-top: 0;
+  }
+  .skills-cont {
+    margin: 0rem 1rem 3rem 0rem;
+  }
+  .s-title > h2 {
+    margin-left: 2rem;
+  }
+  .project {
+    height: 160rem;
+  }
+  .Projects-container {
+    margin: 0rem 1rem 3rem 1rem;
+  }
+  .p-title > h2 {
+    margin-left: 1rem;
+  }
+  .pro-cont {
+    height: 50rem;
+  }
+  .p-left {
+    float: none;
+    height: 23rem;
+    margin: 2rem 0 2rem -5rem;
+    width: 100%;
+  }
+  .p-right {
+    float: none;
+    margin: 2rem 2rem 2rem 2rem;
+    height: 30rem;
+    width: 90%;
+  }
+  .p-right > img {
+    height: 20rem;
+  }
+  .contact-cont {
+    height: 51rem;
+    margin: 2rem 0 2rem 0rem;
+  }
+  .h4 {
+    margin-left: 4rem;
+    font-size: 2rem;
+    line-height: 4.3rem;
+  }
+  .cont-btn {
+    margin-left: 12rem;
+    height: 3rem;
+    width: 170px;
+  }
+  .cont-btn {
+    margin-left: 4rem;
+  }
+  .social {
+    margin: 6rem 5rem 5rem 5rem;
+  }
+  .div {
+    width: 170%;
+  }
+  .form {
+    width: 70%;
+    height: 20rem;
+    margin: 2rem 3rem 0 7rem;
+  }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 770px) {
+  .logo > img {
+    margin: 6px;
+    height: 35px;
+  }
+  .headerElements > li {
+    list-style: none;
+    margin: 10px;
+  }
+  .left {
+    margin-left: 2rem;
+  }
+  .name {
+    font-size: 2.6rem;
+  }
+  .right {
+    margin-right: 3rem;
+  }
+  .left > p {
+    margin-bottom: 0;
+  }
+  .right > img {
+    width: 65%;
+  }
+  .home-btn {
+    height: 3rem;
+    width: 170px;
+    margin-top: 2rem;
+  }
+  .about-container {
+    margin: 3rem 4rem 3rem 4rem;
+  }
+  .exp-cont {
+    height: 35rem;
+  }
+  .section-exp {
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 4rem 3rem 4rem;
+  }
+  .skills-cont {
+    height: 25rem;
+    margin: 0rem 0rem 3rem 0rem;
+  }
+  .s-title > h2 {
+    margin-left: 4rem;
+  }
+  .Projects-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 0rem 3rem 0rem;
+  }
+  .p-title > h2 {
+    margin-left: 4rem;
+  }
+  .p-right {
+    margin: 4rem 2rem 2rem 0rem;
+  }
+  .p-left {
+    margin: 2rem 0 2rem 0rem;
+  }
+  .contact-cont {
+    margin: 2rem 0 2rem 0rem;
+  }
+  .cont-left {
+    margin-top: 2rem;
+  }
+  .social {
+    margin: 4rem 5rem 5rem 5rem;
+  }
+  .h4 {
+    margin-left: 7rem;
+    margin-bottom: 2rem;
+  }
+  .cont-btn {
+    margin-left: 7.5rem;
+  }
+  .form {
+    margin: 2rem 3rem 0 8rem;
+  }
 }
