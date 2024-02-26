@@ -19,7 +19,7 @@ app.post("/addMessage", async (req, res) => {
   try {
     const { fName, lName, email, phone, subject, message } = req.body;
     const result = await pool.query(
-      "INSERT INTO portfoliodata (fname, lname, email, phone, subject, message) VALUES ($1, $2, $3, $4, $5, $6)  RETURNING *",
+      "INSERT INTO portfoliodata (fName, lName, email, phone, subject, message) VALUES ($1, $2, $3, $4, $5, $6)  RETURNING *",
       [fName, lName, email, phone, subject, message]
     );
     res.json(result.rows[0]);
