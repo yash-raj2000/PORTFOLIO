@@ -25,11 +25,14 @@ function Form(props) {
         subject: inputs.subject,
         message: inputs.message,
       };
-      const response = await fetch("http://localhost:5000/addMessage", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(body),
-      });
+      const response = await fetch(
+        "https://server-portfolio-rn5j.onrender.com/addMessage",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(body),
+        }
+      );
       if (response.ok) {
         alert(
           "Thankyou for contacting, i will get in touch with you shortly :')"
